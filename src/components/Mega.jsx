@@ -3,7 +3,7 @@ import './Mega.css'
 
 export default class Mega extends Component {
     state = {
-        quatidade: 5,
+        quatidade: 0,
         numeros: []
     }
 
