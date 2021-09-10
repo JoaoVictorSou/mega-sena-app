@@ -1,0 +1,30 @@
+.Mega .display {
+    width: 235px;
+    border-radius: 5px;
+    background-color: #558b2f;
+}
+
+.Mega .display ul {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.Mega .display ul li {
+    margin-bottom: 5px;
+    width: 50px;
+    border-radius: 25px;
+    line-height: 50px;
+    background-color: #f1f8e9;
+    color: #ff3d00;
+    font-weight: bold;
+    text-align: center;
+}
+li + li {
+    margin-left: 5px;
+}
+.Mega .display ul li:nth-child(4n) + li {
+    margin-left: 0;
+}

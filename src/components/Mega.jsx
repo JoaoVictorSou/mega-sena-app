@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import './Mega.css'
 
 export default class Mega extends Component {
     state = {
         quatidade: 5,
-        numeros: [1, 2, 3]
+        numeros: []
     }
 
     gerar = (qtd) => {
@@ -30,13 +31,18 @@ export default class Mega extends Component {
     }
 
     render() {
+        let numeros = this.state.numeros
+
+        numeros = numeros.map((numero, i) => <li key={i}>{numero}</li>)
         return (
             <div className="Mega">
-                <div>
-                    {this.state.numeros}
-                    <input type="number" value={this.state.quatidade} onChange={e => this.onQuantidade(e.target.value)}/>
-                    <button onClick={e => this.gerar(this.state.quatidade)}>Click</button>
+                <div className="display">
+                    <ul>
+                        {numeros}
+                    </ul>
                 </div>
+                <input type="number" value={this.state.quatidade} onChange={e => this.onQuantidade(e.target.value)}/>
+                <button onClick={e => this.gerar(this.state.quatidade)}>gerar</button>
             </div>
         )
     }
