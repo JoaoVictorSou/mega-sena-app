@@ -19,6 +19,8 @@ export default class Mega extends Component {
             }
         }
 
+        gerados.sort((a, b) => a-b)
+
         this.setState({
             numeros: gerados
         })
