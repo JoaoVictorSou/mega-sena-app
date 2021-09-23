@@ -1,5 +1,12 @@
+.Mega {
+    width: 250px;
+    padding: 5px;
+    border: 2px dashed #558b2f;
+}
 .Mega .display {
     width: 235px;
+    margin: auto;
+    margin-bottom: 5px;
     border-radius: 5px;
     background-color: #558b2f;
 }
@@ -28,4 +35,24 @@ li + li {
 }
 .Mega .display ul li:nth-child(4n) + li {
     margin-left: 0;
+}
+
+div.entrada {
+    width: 249px;
+    margin: auto;
+}
+
+.Mega input, .Mega button {
+    height: 25px;
+}
+
+.Mega input {
+    width: 160px;
+}
+
+.Mega button {
+    text-transform: uppercase;
+    width: 65px;
+    box-sizing: content-box;
+
 }

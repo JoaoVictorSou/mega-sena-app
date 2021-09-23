@@ -41,8 +41,10 @@ export default class Mega extends Component {
                         {numeros}
                     </ul>
                 </div>
-                <input type="number" value={this.state.quatidade} onChange={e => this.onQuantidade(e.target.value)}/>
-                <button onClick={e => this.gerar(this.state.quatidade)}>gerar</button>
+                <div className="entrada">
+                    <input type="number" value={this.state.quatidade} onChange={e => this.onQuantidade(e.target.value)}/>
+                    <button onClick={e => this.gerar(this.state.quatidade)}>gerar</button>
+                </div>
             </div>
         )
     }
