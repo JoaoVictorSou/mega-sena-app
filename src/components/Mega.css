@@ -1,3 +1,7 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .Mega {
     width: 250px;
     padding: 5px;
@@ -38,7 +42,9 @@ li + li {
 }
 
 div.entrada {
-    width: 249px;
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
     margin: auto;
 }
 
@@ -47,12 +53,17 @@ div.entrada {
 }
 
 .Mega input {
-    width: 160px;
+    width: 150px;
 }
 
 .Mega button {
+    align-self: center;
+    box-sizing: content-box;
+    background-color: #558b2f;
+    border: none;
     text-transform: uppercase;
     width: 65px;
-    box-sizing: content-box;
-
+    color: #f1f8e9;
+    font-weight: bold;
+    cursor: pointer;
 }
