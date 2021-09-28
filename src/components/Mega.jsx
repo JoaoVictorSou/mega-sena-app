@@ -10,7 +10,7 @@ export default class Mega extends Component {
     gerar = (qtd) => {
         let gerados = []
         for (let i = 0; i < qtd; i++) {
-            let numero = parseInt(Math.random() * (60 - 0) + 0)
+            let numero = parseInt(Math.random() * (61 - 0) + 0)
 
             if (gerados.indexOf(numero) === -1) {
                 gerados.push(numero)
