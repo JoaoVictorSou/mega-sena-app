@@ -12,7 +12,7 @@ export default class Mega extends Component {
         for (let i = 0; i < qtd; i++) {
             let numero = parseInt(Math.random() * (61 - 0) + 0)
 
-            if (gerados.indexOf(numero) === -1) {
+            if (!gerados.includes(numero)) {
                 gerados.push(numero)
             } else {
                 i--
